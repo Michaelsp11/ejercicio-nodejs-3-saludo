@@ -2,7 +2,7 @@ const fs = require("fs");
 const chalk = require("chalk");
 const guardarSaludo = (nombre) =>
   fs.writeFile(
-    `${__dirname}/textos/saludo.txt`,
+    `${__dirname}/../textos/saludo.txt`,
     `Hola, ${nombre}. Encantado de saludarte.`,
     (err) => {
       if (err) {
@@ -21,5 +21,5 @@ const guardarSaludo = (nombre) =>
     }
   );
 module.exports = {
-  guardarSaludo
+  guardarSaludo,
 };
